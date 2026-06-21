@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Heavens Palate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Heavens Palate</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipe.html">Featured Recipe</a></li>
+          <li class="nav-item"><a class="nav-link active" href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="fw-bold mb-4">Admin Dashboard</h1>
+
+    <section class="admin-panel mb-5">
+      <h2 class="h4 mb-4">Recipes currently on the site</h2>
+
+      <div class="list-group admin-list">
+        <div class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <span>Creamy Vegetable Pasta</span>
+          <div>
+            <button class="btn btn-outline-light btn-sm" type="button">Edit</button>
+            <button class="btn btn-outline-warning btn-sm" type="button">Delete</button>
+          </div>
+        </div>
+
+        <div class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <span>Beef Wellington</span>
+          <div>
+            <button class="btn btn-outline-light btn-sm" type="button">Edit</button>
+            <button class="btn btn-outline-warning btn-sm" type="button">Delete</button>
+          </div>
+        </div>
+
+        <div class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <span>Brown Sugar Pancakes</span>
+          <div>
+            <button class="btn btn-outline-light btn-sm" type="button">Edit</button>
+            <button class="btn btn-outline-warning btn-sm" type="button">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-panel">
+      <h2 class="h4 mb-4">Add a new recipe</h2>
+
+      <form class="admin-form">
+        <div class="mb-3">
+          <label class="form-label" for="recipeTitle">Recipe Name</label>
+          <input class="form-control" type="text" id="recipeTitle" required minlength="3">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="recipeImage">Recipe image</label>
+          <input class="form-control" type="file" id="recipeImage" accept="image/*">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="recipeAuthor">Creator Name</label>
+          <input class="form-control" type="text" id="recipeAuthor" required minlength="3">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="recipeDescription">Brief description</label>
+          <textarea class="form-control" id="recipeDescription" rows="4" required minlength="5"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="recipeIngredients">Ingredients</label>
+          <textarea class="form-control" id="recipeIngredients" rows="5" required minlength="10"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Create recipe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <small>&copy; 2026 Heavens Palate</small>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

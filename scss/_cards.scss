@@ -1,0 +1,24 @@
+.recipe-card {
+  background-color: $luxury-black-light;
+  border: 2px solid $dark-gold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(140, 106, 0, 0.25);
+}
+
+.recipe-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.recipe-card .card-title {
+  color: $primary-color;
+}
+
+.recipe-card .card-text {
+  color: #d0d0d0 !important;
+}

@@ -1,0 +1,101 @@
+* {
+  border-radius: 0 !important;
+}
+
+
+.navbar-brand {
+  color: $primary-color !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hero-section h1 {
+  color: $luxury-black-light !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: $dark-gold;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: $secondary-color;
+  color: $text-color;
+  font-family: "Segoe UI", sans-serif;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.navbar {
+  background-color: $luxury-black !important;
+  border-bottom: 3px solid $dark-gold;
+}
+
+.nav-link {
+  color: #e5e5e5 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: $primary-color !important;
+}
+
+h1,
+h2,
+h3 {
+  color: $text-color;
+}
+
+body {
+  color: $text-color;
+  font-family: "Segoe UI", sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(20px);
+  transform: scale(1.05);
+
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(202, 202, 202, 0.15);
+
+  z-index: -1;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background-color: $luxury-black;
+  border-top: 2px solid $dark-gold;
+  color: #d6d6d6;
+}
+
+.footer small {
+  color: $primary-color;
+}

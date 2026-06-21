@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heavens Palate | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Heavens Palate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipe.html">Featured Recipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="hero-section text-center mb-5">
+      <h1 class="display-5 fw-bold">Signature Collection</h1>
+      <p class="lead text-muted">Browse these heavenly recipes for simple everyday cooking.</p>
+    </section>
+
+    <section class="row g-3 mb-5 filters-section">
+      <div class="col-md-6">
+        <label for="sortDate" class="form-label">Sort by date</label>
+        <select id="sortDate" class="form-select">
+          <option>Newest to oldest</option>
+          <option>Oldest to newest</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="searchRecipe" class="form-label">Filter by title or author</label>
+        <input id="searchRecipe" type="text" class="form-control" placeholder="Search recipes..." />
+      </div>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <article class="card recipe-card h-100">
+            <img src="images/recipe.jpg" class="card-img-top" alt="Vegetable pasta dish" />
+            <div class="card-body">
+              <h2 class="h5 card-title">Creamy Vegetable Pasta</h2>
+              <p class="card-text text-muted mb-1">By Yeabsera</p>
+              <p class="card-text small text-muted">12 June 2026</p>
+            </div>
+          </article>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <article class="card recipe-card h-100">
+            <img src="images/recipe.jpg" class="card-img-top" alt="Vegetable pasta dish" />
+            <div class="card-body">
+              <h2 class="h5 card-title">Beef Wellington</h2>
+              <p class="card-text text-muted mb-1">By Yeabsera</p>
+              <p class="card-text small text-muted">8 June 2026</p>
+            </div>
+          </article>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <article class="card recipe-card h-100">
+            <img src="images/recipe.jpg" class="card-img-top" alt="Vegetable pasta dish" />
+            <div class="card-body">
+              <h2 class="h5 card-title">Brown Sugar Pancakes</h2>
+              <p class="card-text text-muted mb-1">By Yeabsera</p>
+              <p class="card-text small text-muted">3 June 2026</p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <small>&copy; 2026 Heavens Palate</small>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
