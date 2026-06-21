@@ -11859,5 +11859,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #f8f9fa;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.recipe-card {
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  max-width: 800px;
+}
+
+.hero-section {
+  padding: 2rem 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
