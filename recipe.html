@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heavens Palate | Recipe</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Heavens Palate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="recipe.html">Featured Recipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <article class="row g-5 align-items-start">
+      <div class="col-lg-6">
+        <img src="images/recipe.jpg" class="img-fluid rounded shadow-sm" alt="Creamy vegetable pasta" />
+      </div>
+
+      <div class="col-lg-6">
+        <p class="text-muted mb-1">By Yeabsera</p>
+        <p class="small text-muted">12 June 2026</p>
+        <h1 class="fw-bold mb-3">Creamy Vegetable Pasta</h1>
+        <p class="lead">
+          An easy to make and comforting pasta recipe with fresh vegetables and a high degree of flexibility to adjust to your own taste, Perfect for a weekday dinner.
+        </p>
+
+        <h2 class="h4 mt-4">Ingredients</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">250g pasta</li>
+          <li class="list-group-item">1 cup mixed vegetables</li>
+          <li class="list-group-item">1 garlic clove</li>
+          <li class="list-group-item">150ml cream</li>
+          <li class="list-group-item">Salt and pepper</li>
+        </ul>
+      </div>
+    </article>
+
+    <section class="mt-5">
+      <h2 class="h3 mb-3">Leave a comment</h2>
+
+      <form class="bg-white p-4 rounded shadow-sm">
+        <div class="mb-3">
+          <label for="commentName" class="form-label">Name</label>
+          <input
+            type="text"
+            id="commentName"
+            class="form-control"
+            required
+            minlength="3"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="commentMessage" class="form-label">Message</label>
+          <textarea
+            id="commentMessage"
+            class="form-control"
+            rows="5"
+            required
+            minlength="5"
+            placeholder="Write your comment"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit comment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white border-top py-4">
+    <div class="container text-center text-muted">
+      <small>&copy; 2026 Heavens Palate</small>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
