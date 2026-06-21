@@ -1,0 +1,26 @@
+{
+  "name": "css-frameworks-resit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass --quiet-deps scss/styles.scss css/styles.css",
+  "watch": "sass --quiet-deps --watch scss/styles.scss css/styles.css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeabseraG/CSS-Frameworks-Resit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YeabseraG/CSS-Frameworks-Resit/issues"
+  },
+  "homepage": "https://github.com/YeabseraG/CSS-Frameworks-Resit#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.101.0"
+  }
+}
